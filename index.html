@@ -1,44 +1,97 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tiểu học Đoàn Thị Điểm – Lớp 5/3</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
 <body>
+  <!-- HEADER -->
   <header class="site-header">
-    <h1>Tiểu học Đoàn Thị Điểm – Lớp 5/3</h1>
-    <p>Hotline: 0982 131 694</p>
-  </header>
-
-  <nav class="navbar">
-    <ul>
-      <li><a href="#">Trang chủ</a></li>
-      <li><a href="#">Bản tin</a></li>
-      <li><a href="#">Thời khoá biểu</a></li>
-      <li><a href="#">Liên hệ</a></li>
-    </ul>
-  </nav>
-
-  <div class="container main">
-    <div class="content">
-      <div class="card">
-        <h2>Bản tin lớp học</h2>
-        <ul>
-          <li>25/08: Chuẩn bị văn nghệ Trung Thu</li>
-          <li>20/08: Họp PHHS 8:00–9:30</li>
-        </ul>
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="assets/logo.png" alt="Logo lớp 5/3" class="logo" />
+        <div>
+          <h1>Tiểu học Đoàn Thị Điểm</h1>
+          <p class="subtitle">Lớp 5/3 – Năm học 2025</p>
+        </div>
       </div>
-
-      <div class="card">
-        <h2>Lịch trực nhật</h2>
-        <p>Nhóm 1: An – Bình – Chi</p>
-        <p>Nhóm 2: Dũng – Hạnh – Khoa</p>
+      <div class="hotline">
+        Hotline: <a href="tel:0982131694">0982 131 694</a>
       </div>
     </div>
+    <!-- NAV -->
+    <nav class="navbar">
+      <div class="container">
+        <ul class="menu">
+          <li><a class="active" href="#">Trang chủ</a></li>
+          <li><a href="#news">Bản tin</a></li>
+          <li><a href="#schedule">Thời khoá biểu</a></li>
+          <li><a href="#duty">Lịch trực nhật</a></li>
+          <li><a href="#contact">Liên hệ</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
 
+  <!-- MAIN -->
+  <main class="container main">
+    <!-- CONTENT (trái) -->
+    <section class="content">
+      <article id="news" class="card">
+        <h2>📰 Bản tin lớp học</h2>
+        <ul class="list">
+          <li><strong>25/08:</strong> Chuẩn bị văn nghệ Trung Thu (đăng ký với lớp trưởng).</li>
+          <li><strong>20/08:</strong> Họp PHHS sáng thứ Bảy 8:00–9:30.</li>
+        </ul>
+      </article>
+
+      <article id="schedule" class="card">
+        <h2>📅 Thời khoá biểu (tuần này)</h2>
+        <table class="table">
+          <thead><tr><th>Thứ</th><th>Môn</th><th>Ghi chú</th></tr></thead>
+          <tbody>
+            <tr><td>Hai</td><td>Toán, TV</td><td>KT 15'</td></tr>
+            <tr><td>Ba</td><td>Tự nhiên & XH</td><td>Bài nhóm</td></tr>
+            <tr><td>Tư</td><td>Mĩ thuật</td><td>Mang bút màu</td></tr>
+            <tr><td>Năm</td><td>Âm nhạc</td><td>Tập bài mới</td></tr>
+            <tr><td>Sáu</td><td>Thể dục</td><td>Đồng phục TD</td></tr>
+          </tbody>
+        </table>
+      </article>
+    </section>
+
+    <!-- SIDEBAR (phải) -->
     <aside class="sidebar">
+      <div id="duty" class="card">
+        <h3>🧹 Lịch trực nhật</h3>
+        <ol class="list">
+          <li>Nhóm 1: An – Bình – Chi</li>
+          <li>Nhóm 2: Dũng – Hạnh – Khoa</li>
+          <li>Nhóm 3: Linh – My – Phúc</li>
+          <li>Nhóm 4: Quân – Thảo – Yên</li>
+        </ol>
+      </div>
+
       <div class="card">
-        <h2>Thông báo</h2>
-        <p>Thông tin mới nhất từ giáo viên chủ nhiệm.</p>
+        <h3>📢 Thông báo nhanh</h3>
+        <p>Phụ huynh đưa bé đi học đúng giờ. Cảm ơn ạ!</p>
+      </div>
+
+      <div id="contact" class="card contact">
+        <h3>Liên hệ</h3>
+        <p>GVCN: Cô/Thầy …</p>
+        <p>Hotline: <a href="tel:0982131694">0982 131 694</a></p>
       </div>
     </aside>
-  </div>
+  </main>
 
+  <!-- FOOTER -->
   <footer class="site-footer">
-    © 2025 Lớp 5/3 – Tiểu học Đoàn Thị Điểm
+    <div class="container">
+      © 2025 Lớp 5/3 – Tiểu học Đoàn Thị Điểm
+    </div>
   </footer>
 </body>
+</html>
